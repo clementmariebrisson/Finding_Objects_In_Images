@@ -13,7 +13,6 @@
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
   - [Usage](#usage)
-  - [Roadmap](#roadmap)
   - [Contributing](#contributing)
   - [Contact](#contact)
   - [Acknowledgments](#acknowledgments)
@@ -23,10 +22,19 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+**The objective** is to create an algorithm that retrieves the logos of the companies present on the documents. In this way, we will identify the companies that have supplied these invoices in order to classify them according to the field of activity of the company that issued the invoice.
+
+During this project, we have read a lot of documentation, as well as tests on the different possible methods of logo detection on invoices. 
+
 The goal of this project is to classify images by detecting objects. Files can be:
 * bill (from serval companies)
 * payslip
 * account statement
+
+To do so, we used two methods :
+- Template matching
+- SIFT: Scale Invariant Feature Transform 
+
 
 This is a student project.
 <br></br>
@@ -46,28 +54,27 @@ How to install, run and use the project.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+The project is a Jupyter Notebook. You will have to install the Jupyter Notebook software on your computer. Or, you can install it on AnaConda.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Before compiling one of the two notebook, you will have to check if you have all required Python librairies installed. Otherwise, you will have to install them._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/clementmariebrisson/Finding_Objects_In_Images.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+2. Open Jupyter Notebook
+3. Install Python packages
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+    pip install opencv-python
+    pip install numpy
+    pip install matplotlib
+    pip install pdf2image
+    pip install Pillow
+    pip install regex
+    pip install pytesseract
+    pip install pandas
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -77,29 +84,20 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+We find our scores in a CSV file, which allows us to see the ratio of each logo detection test on a file.
+The SIFT Brute Force method is the method that works best among the different ones we tested. Indeed, this method is the most precise and the most adapted to our initial problem.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+All methods have their weak points, for SIFT it is the distance of the keypoints that are matched. We were able to overcome this with SIFT - bruteforce, but if the logo does not have much detail, few keypoints are detected and this affects the score calculated by our program.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+The bruteforce method was the best way to solve the initial problem, thanks to all the possibilities offered by the knnMatcher.
 
+_For more informations you can read the [report](https://github.com/clementmariebrisson/Finding_Objects_In_Images/blob/main/Rapport.pdf)._
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+_For more examples, please refer to those sites :_
+* [SIFT with python](https://www.analyticsvidhya.com/blog/2019/10/detailed-guide-powerful-sift-technique-image-matching-python)
+* [Multi Scale Template Matching with python](https://pyimagesearch.com/2015/01/26/multi-scale-template-matching-using-python-opencv/#download-the-code)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
