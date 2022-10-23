@@ -15,7 +15,6 @@
   - [Usage](#usage)
   - [Roadmap](#roadmap)
   - [Contributing](#contributing)
-  - [License](#license)
   - [Contact](#contact)
   - [Acknowledgments](#acknowledgments)
 
@@ -120,22 +119,12 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Alexis Guillotin & Clement Marie Brisson
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/clementmariebrisson/Finding_Objects_In_Images](https://github.com/clementmariebrisson/Finding_Objects_In_Images)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -160,16 +149,15 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/clementmariebrisson/Finding_Objects_In_Images.svg?style=for-the-badge
+[contributors-url]: https://github.com/clementmariebrisson/Finding_Objects_In_Images/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/clementmariebrisson/Finding_Objects_In_Images.svg?style=for-the-badge
+[forks-url]: https://github.com/clementmariebrisson/Finding_Objects_In_Images/network/members
+
+[stars-shield]: https://img.shields.io/github/stars/clementmariebrisson/Finding_Objects_In_Images.svg?style=for-the-badge
+[stars-url]: https://github.com/clementmariebrisson/Finding_Objects_In_Images/stargazers
+[issues-shield]: https://img.shields.io/github/issues/clementmariebrisson/Finding_Objects_In_Images.svg?style=for-the-badge
+[issues-url]: https://github.com/clementmariebrisson/Finding_Objects_In_Images/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/clementmariebrisson
 [product-screenshot]: images/screenshot.png
